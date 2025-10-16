@@ -29,6 +29,7 @@ function App() {
         <p className="text-xl">
           you won't find me a lot on the internet, but if you want to reach me, you can find me here:
           <ul className="list-disc list-inside">
+            <li>Matrix: <a href="https://matrix.to/#/@axmc:axmc.one" className="underline">@axmc:axmc.one</a></li>
             <li>alex {"{at}"} axmc {"{dot}"} one</li>
           </ul>
         </p>
