@@ -1,4 +1,4 @@
-import type { Context } from "@netlify/functions";
+import type { Config, Context } from "@netlify/functions";
 
 export default async (_: Request, __: Context) => {
     const apiKey = Netlify.env.get("STEAM_API_KEY");
@@ -15,6 +15,10 @@ export default async (_: Request, __: Context) => {
         .sort((a: Game, b: Game) => b.rtime_last_played - a.rtime_last_played)[0];
 
     return new Response(JSON.stringify(latestGame));
+}
+
+export const config: Config = {
+    path: "/api/latestgame"
 }
 
 export type Game = {
