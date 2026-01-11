@@ -27,7 +27,6 @@ export default function BlogPost({ id }: { id: string }) {
   return (
     <>
       <h1 className="text-4xl font-bold mb-8">{title}</h1>
-      
       {
         PostContent ? (
           <article className="prose lg:prose-xl prose-invert h-auto">
